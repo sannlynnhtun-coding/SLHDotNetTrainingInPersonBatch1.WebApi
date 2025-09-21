@@ -12,4 +12,8 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SLHDotNetTrainingInPersonBatch1.WebApi.Database\SLHDotNetTrainingInPersonBatch1.WebApi.Database.csproj" />
+  </ItemGroup>
+
 </Project>
