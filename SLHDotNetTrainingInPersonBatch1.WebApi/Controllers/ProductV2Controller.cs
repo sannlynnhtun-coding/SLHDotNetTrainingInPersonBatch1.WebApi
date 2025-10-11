@@ -52,7 +52,12 @@ namespace SLHDotNetTrainingInPersonBatch1.WebApi.Controllers
                 DeleteFlag = product.DeleteFlag
             }).ToList();
 
-            return Ok(lst);
+            return Ok(new
+            {
+                IsSuccess = true,
+                Message = "Success",
+                Data = lst
+            });
         }
 
         [HttpGet("{id}")]
